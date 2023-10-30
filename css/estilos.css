@@ -1,11 +1,13 @@
 body
 {
 text-align: "center";
-font-family: arial;
 color: #333;
 font-size: 16px;
 margin: 0;
 padding: 0;
+font-family: Arial, sans-serif;
+text-align: center;
+background-color: #f0f0f0;
 }
 #cabecera
 {
@@ -39,4 +41,37 @@ padding: 1em;
 font-weight: normal;
 font-size: 0.8em;
 padding: 1em 0 0 0;
+}
+.sidebar {
+    width: 250px;
+    background-color: #3498db;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    transition: left 0.3s;
+}
+.sidebar ul 
+{
+list-style: none;
+padding: 0;
+}
+
+.sidebar li 
+{
+ padding: 10px;
+ cursor: pointer;
+}
+
+.sidebar li:hover {
+background-color: #258cd1;
+}
+.hidden {
+display: none;
+}
+main 
+{
+margin-left: 250px;
+padding: 20px;
 }
