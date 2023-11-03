@@ -13,12 +13,3 @@ login.addEventListener("click", function() {
         logout.style.display = "list-item";
     }
 });
-
-logout.addEventListener("click", function() {
-    // Simula el cierre de sesión (puedes agregar tu lógica de cierre de sesión real aquí).
-    // Oculta las opciones después de cerrar sesión.
-    const hiddenItems = document.querySelectorAll(".hidden");
-    hiddenItems.forEach(item => item.style.display = "none");
-    login.style.display = "list-item";
-    logout.style.display = "none";
-});
